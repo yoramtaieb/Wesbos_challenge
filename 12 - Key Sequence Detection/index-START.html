@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Key Detection</title>
+    <script type="text/javascript" src="https://www.cornify.com/js/cornify.js">
+    </script>
+</head>
+
+<body>
+
+    <script>
+        let passWord = "nike";
+        let array = [];
+
+        document.addEventListener('keydown', (e) => {
+            array.push(e.key);
+            if (array.join('').includes(passWord)) {
+                cornify_add();
+            }
+        });
+
+
+        // ES5
+        // document.addEventListener('keydown', tabLeau)
+
+        // function tabLeau(e) {
+        //     array.push(e.key);
+        //     if (array.join('').includes(passWord)) {
+        //         cornify_add();
+        //     }
+        // };
+    </script>
+</body>
+
+</html>
